@@ -23,10 +23,41 @@ class _HomeCalculatorState extends State<HomeCalculator> {
                 child: Container(
                   padding: EdgeInsets.all(5),
                   child: GridView(
+                    physics: const NeverScrollableScrollPhysics(),
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 4),
+                        crossAxisCount: 4,
+                        crossAxisSpacing: 15,
+                        mainAxisSpacing: 15),
                     shrinkWrap: true,
                     children: [
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.yellow,
+                          shape: new RoundedRectangleBorder(
+                            borderRadius: new BorderRadius.circular(50.0)
+                          )
+                        ),
+                        onPressed: () {},
+                        child: Text(
+                          'C',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ),
+                      Container(
+                        color: Colors.yellow,
+                      ),
+                      Container(
+                        color: Colors.yellow,
+                      ),
+                      Container(
+                        color: Colors.yellow,
+                      ),
+                      Container(
+                        color: Colors.yellow,
+                      ),
                       Container(
                         color: Colors.yellow,
                       ),
